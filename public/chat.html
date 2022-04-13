@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chatler - chat all over the world</title>
+</head>
+
+<body>
+
+    <!-- the main container -->
+
+    <div class="maincontainer">
+        <!-- header -->
+        <header class="header">
+            <!-- adding logo -->
+            <i class="large material-icons" style="font-size: 40px;">sentiment_very_satisfied</i>
+            <!-- adding website name -->
+            <h1 class="title">Chatler</h1>
+            <!-- adding leave button -->
+            <button id="leaveRoom">Leave room</button>
+        </header>
+
+        <!-- container for aside bar and chat message container -->
+        <div class="middlePart">
+            <!-- aside bar for room name and user list container -->
+            <aside>
+                <!-- room name container -->
+                <div class="roomNameContainer">
+                    <i class="large material-icons" style="font-size: 40px;">local_library</i>
+                    <h1 class="text" style="display: inline;position: relative; top: -10px;">Room</h1>
+                    <h1 class="Name">Name:</h1>
+                    <h1 id="getName" name="getName">Javascript</h1>
+                </div>
+                <!-- users name container -->
+                <div class="usersNameContainer">
+                    <i class="material-icons" style="font-size: 40px;">people</i>
+                    <h1 class="text" style="display: inline; position: relative; top: -10px;">Users</h1>
+                    <div id="usersList"></div>
+                </div>
+            </aside>
+
+            <!-- chat box -->
+            <div class="chatMessageContainer">
+                <div class="chatMessages"></div>
+            </div>
+        </div>
+
+        <!-- input box and send message button -->
+        <div class="inputBoxContainer">
+            <!-- form to send message -->
+            <form id="chat-form">
+                <!-- input box -->
+                <input type="text" required autocomplete="off" name="message" id="message">
+<!-- button -->
+                <button id="sendMessage"><i class="material-icons">flight</i>
+                    <p>Send</p>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+
+
+    <!-- some script tags  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+        integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>

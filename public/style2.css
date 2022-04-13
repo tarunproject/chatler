@@ -1,0 +1,156 @@
+/* essential css command */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* setting the main container size and other css command */
+.maincontainer {
+    width: 90vw;
+    background-color: rgb(107, 89, 206);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+}
+/* header css command */
+header {
+    width: 100%;
+    background-color: rgb(90, 68, 215);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    display: flex;
+}
+/* designing header leave button */
+header #leaveRoom {
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    background-color: rgb(148, 160, 167);
+    color: rgb(56, 55, 55);
+    outline: none;
+    border: 0px;
+    position: absolute;
+    right: 50px;
+}
+header #leaveRoom:hover {
+    background-color: rgb(183, 186, 187);
+}
+
+/* middle part in which aside and chat message box are placed */
+.middlePart {
+    display: flex;
+    border-right: 1px solid gray;
+    width: 90vw;
+}
+/* designing aside bar */
+aside {
+    width: 30%;
+}
+aside .roomNameContainer, .usersNameContainer {
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+}
+aside .roomNameContainer #getName {
+    background: rgba(0, 0, 0, 0.2);
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;;
+}
+aside .usersNameContainer #usersList {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 120px;
+    overflow-y: auto;
+}
+aside .usersNameContainer #usersList p {
+    padding-top: 15px;
+}
+
+/* designing chat message container box */
+.chatMessageContainer {
+    width: 70%;
+    background-color: white;
+}
+.chatMessageContainer .chatMessages {
+    overflow-y: auto;
+    width: 100%;
+    height: 380px;
+}
+
+/* designing input and button container */
+.inputBoxContainer {
+    width: 100%;
+    background-color: rgb(90, 68, 215);
+    text-align: center;
+}
+.inputBoxContainer input {
+    width: 65%;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 8x;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputBoxContainer button {
+    width: 20%;
+    padding: 7px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: orangered;
+}
+.inputBoxContainer button:hover {
+    background-color: orange;
+}
+
+/* designing the format of message that recieve and send user on click send */
+.messageBox {
+    width: 80%;
+    background-color: #e6e9ff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+.messageBox h2 {
+    padding:10px;
+}
+.messageBox .upperMessage {
+    display: flex;
+}
+.messageBox .upperMessage h4{
+    padding-left: 10px;
+    color: blue;
+}
+.messageBox .upperMessage .time {
+    color: gray;
+}
+
+
+/* some css responsive design for classes */
+@media screen and (max-width: 620px) {
+    aside {display: none;width: 0px};
+  }
+@media screen and (max-width:620px) {
+    .chatMessageContainer{width: 90vw;}
+    .inputBoxContainer button {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+}
+@media  screen and (max-width:365px) {
+    header #leaveRoom {
+        right: 20px;
+    }
+}

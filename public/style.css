@@ -1,0 +1,61 @@
+/* essential css command */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* giving the size and other css for main container */
+.maincontainer {
+    width: 90vw;
+    background-color: rgb(107, 89, 206);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* header part */
+header {
+    width: 100%;
+    background-color: rgb(90, 68, 215);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    display: flex;
+}
+
+/* middle main part  */
+.main {
+    width: 100%;
+    color: white;
+}
+.main form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main form label {
+    font-size: 25px;
+    padding: 20px;
+}
+.main form #username, #room {
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    margin-left: 10%;
+    border-radius: 5px 5px 5px 5px;
+}
+.main form #submit {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: orangered;
+}
+.main form #submit:hover{
+    background-color: orange;
+}
