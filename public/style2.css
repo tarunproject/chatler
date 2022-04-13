@@ -32,7 +32,7 @@ header #leaveRoom {
     outline: none;
     border: 0px;
     position: absolute;
-    right: 50px;
+    right: 100px;
 }
 header #leaveRoom:hover {
     background-color: rgb(183, 186, 187);
