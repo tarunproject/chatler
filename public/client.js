@@ -16,6 +16,7 @@ const { username, room } = Qs.parse(location.search, {
   });
 
    // making time function
+   function giveTime(){
 var time = new Date();
 var hour = time.getHours();
 var minute = time.getMinutes();
@@ -71,10 +72,12 @@ switch (hour){
     am = " PM";
     break;
 }
-
-
 // creating exact time format to add in time
-let exactTime = hour+":"+minute+am;
+let exactTime = hour+":"+minute + am;
+return exactTime;
+   }
+
+
 
 
 
@@ -149,6 +152,7 @@ function addRoomUsers(users){
 function messageBox(sender,senderMessage){
     let div = document.createElement('div');
     div.classList.add('messageBox');
+    let exactTime = giveTime()
     let msg = `<div class="upperMessage">
     <h4 class="usernameinMessage">${sender}</h4>
     <h4 class="time">${exactTime}</h4></div>

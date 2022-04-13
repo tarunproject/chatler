@@ -10,6 +10,7 @@ const io = require("socket.io")(server);
 const staticPath = path.join(__dirname, "/public/");
 const port = process.env.PORT || 5000;
 // middleware
+app.use('/images',express.static(path.join(__dirname, "/images/")))
 app.use(express.static(staticPath))
 
 // routing
