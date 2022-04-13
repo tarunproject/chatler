@@ -42,6 +42,7 @@ header #leaveRoom:hover {
 .middlePart {
     display: flex;
     border-right: 1px solid gray;
+    border-left: 1px solid gray;
     width: 90vw;
 }
 /* designing aside bar */
