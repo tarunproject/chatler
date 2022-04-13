@@ -1,7 +1,7 @@
 
-# Chatler - online room chating website
+# Chatler - online room chatting website
 
-Chatler a online multiple room chating website that make multiple room for
+Chatler a online multiple room chatting website that make multiple room for
 multiple user and show the user list in your page
 
 
